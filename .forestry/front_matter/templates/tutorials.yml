@@ -43,3 +43,5 @@ fields:
       format: markdown
   label: Tutorial text
   description: Where you put the contents of your tutorial.
+pages:
+- tutorials/test-tutorial.md
