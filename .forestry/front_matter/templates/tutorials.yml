@@ -1,4 +1,45 @@
 ---
 label: tutorials
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: This is where you enter your tutorial title
+- name: published_date/time
+  type: datetime
+  label: published date/time
+  description: Here's where you choose the pushed date, etc.
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: Tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Here is where you can add tags
+- name: add_media
+  type: file
+  config:
+    maxSize: 64
+  label: Add media
+  description: Where you can add media to the tutorial.
+- name: More_Media
+  type: image_gallery
+  config: {}
+  label: Add More Media
+  description: Add more media here.
+- name: tutorial_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Tutorial text
+  description: Where you put the contents of your tutorial.
